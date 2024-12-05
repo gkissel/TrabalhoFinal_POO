@@ -13,7 +13,7 @@ public class Estagiario extends Funcionario implements Serializable {
         this.horasServico = horasServico;
     }
 
-    
+
 
     public float getBolsa() {
         return bolsa;
@@ -30,7 +30,7 @@ public class Estagiario extends Funcionario implements Serializable {
     public void setHorasServico(float horasServico) {
         this.horasServico = horasServico;
     }
-    
+
     @Override
     public String toString() {
         return "Estagiario{" +
@@ -43,7 +43,7 @@ public class Estagiario extends Funcionario implements Serializable {
                 ", registro='" + registro + '\'' +
                 ", salario=" + salario + '\'' +
                 ", bolsa=" + bolsa + '\'' +
-                ", horas de trabalho=" + horasServico + 
+                ", horas de trabalho=" + horasServico +
                 '}';
     }
 

@@ -48,7 +48,7 @@ public class home extends javax.swing.JFrame {
         setResizable(false);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel6.setText("Link do Repositório:  ");
+        jLabel6.setText("Link do Repositório:  https://github.com/gkissel/TrabalhoFinal_POO");
 
         jLabel5.setText("051183 - Guilherme Carbonera Chiaradia");
 
@@ -108,7 +108,8 @@ public class home extends javax.swing.JFrame {
 
         mnFuncCad.setText("Cadastro");
         mnFuncCad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnFuncCadActionPerformed(evt);
             }
         });
@@ -120,7 +121,8 @@ public class home extends javax.swing.JFrame {
 
         mnEstCad.setText("Cadastro");
         mnEstCad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnEstCadActionPerformed(evt);
             }
         });
@@ -132,18 +134,22 @@ public class home extends javax.swing.JFrame {
 
         mnParte2.setText("Parte 2");
         mnParte2.addMenuListener(new javax.swing.event.MenuListener() {
-            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            @Override
+			public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
-            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            @Override
+			public void menuDeselected(javax.swing.event.MenuEvent evt) {
             }
-            public void menuSelected(javax.swing.event.MenuEvent evt) {
+            @Override
+			public void menuSelected(javax.swing.event.MenuEvent evt) {
                 mnParte2MenuSelected(evt);
             }
         });
 
         BibliotecaMenu.setText("Biblioteca");
         BibliotecaMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BibliotecaMenuActionPerformed(evt);
             }
         });
@@ -194,7 +200,8 @@ public class home extends javax.swing.JFrame {
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+            @Override
+			public void run() {
                 new home().setVisible(true);
             }
         });

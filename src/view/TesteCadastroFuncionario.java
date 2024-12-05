@@ -1,12 +1,12 @@
 package view;
 
 import java.awt.GridLayout;
-import java.util.List;
+
 import javax.swing.JLabel;
-import model.Funcionario;
-import model.Estagiario;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
+import model.Funcionario;
 
 public class TesteCadastroFuncionario extends javax.swing.JInternalFrame {
 
@@ -25,21 +25,24 @@ public class TesteCadastroFuncionario extends javax.swing.JInternalFrame {
 
         jButton1.setText("Cadastrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoCadastrar(evt);
             }
         });
 
         jButton2.setText("Visualizar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoVisualizar(evt);
             }
         });
 
         jButton3.setText("Excluir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoExcluir(evt);
             }
         });
@@ -95,7 +98,7 @@ public class TesteCadastroFuncionario extends javax.swing.JInternalFrame {
         if (funcionario != null) {
             JPanel panel = new JPanel();
             panel.setLayout(new GridLayout(0, 2));
-            
+
             panel.add(new JLabel("Nome:"));
             panel.add(new JLabel(funcionario.getNome()));
 

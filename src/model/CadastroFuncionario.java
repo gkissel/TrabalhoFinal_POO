@@ -1,8 +1,11 @@
 package model;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class CadastroFuncionario {
 
@@ -35,7 +38,7 @@ public class CadastroFuncionario {
         }
     }
 
-    
+
     public static Funcionario lerCadastro(String nome) {
         String fileName = DIRECTORY_PATH + nome + ".txt";
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {

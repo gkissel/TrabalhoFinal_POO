@@ -28,7 +28,7 @@ O projeto está organizado em pacotes conforme descrito abaixo:
 
 1. **Clone o repositório**:
     ```bash
-    git clone 
+    git clone https://github.com/gkissel/TrabalhoFinal_POO.git
     ```
 
 2. **Importe o projeto na sua IDE**:

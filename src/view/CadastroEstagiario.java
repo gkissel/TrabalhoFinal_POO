@@ -1,9 +1,11 @@
 package view;
 
 import java.awt.GridLayout;
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 import model.Estagiario;
 
 
@@ -53,7 +55,8 @@ public class CadastroEstagiario extends javax.swing.JFrame {
         botaoExcluir.setForeground(new java.awt.Color(255, 255, 255));
         botaoExcluir.setText("Excluir");
         botaoExcluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoExcluirActionPerformed(evt);
             }
         });
@@ -63,7 +66,8 @@ public class CadastroEstagiario extends javax.swing.JFrame {
         botaoCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         botaoCadastrar.setText("Cadastrar");
         botaoCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoCadastrarActionPerformed(evt);
             }
         });
@@ -73,7 +77,8 @@ public class CadastroEstagiario extends javax.swing.JFrame {
         botaoVisualizar.setForeground(new java.awt.Color(255, 255, 255));
         botaoVisualizar.setText("Visualizar");
         botaoVisualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoVisualizarActionPerformed(evt);
             }
         });
@@ -81,7 +86,8 @@ public class CadastroEstagiario extends javax.swing.JFrame {
         btnClose.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
         btnClose.setText("X");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            @Override
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
             }
         });
@@ -245,7 +251,8 @@ public class CadastroEstagiario extends javax.swing.JFrame {
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+            @Override
+			public void run() {
                 new CadastroEstagiario().setVisible(true);
             }
         });
